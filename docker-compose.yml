@@ -1,0 +1,11 @@
+version: '3'
+services:
+  discovery-service:
+    build: .
+    working_dir: /usr/app
+    ports:
+      - 4000:4000
+    environment:
+      - MOVIE_SERVICE_HOST=movie-service
+      - SHOW_SERVICE_HOST=show-service
+      - ORDER_SERVICE_HOST=order-service
