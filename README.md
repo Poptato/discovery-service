@@ -1,2 +1,2 @@
-# discovery-service
+# Discovery
 > Poptato's discovery micro-service

@@ -1,0 +1,21 @@
+{
+  "name": "discovery-service",
+  "version": "1.0.0",
+  "description": "Poptato's discovery micro-service",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "author": "Idan A. <idan5x@live.com> (idan5x.github.io)",
+  "contributors": [],
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-http-proxy": "^1.0.6",
+    "thinky": "^2.3.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.37"
+  }
+}
