@@ -14,14 +14,9 @@ const orderService = process.env.ORDER_SERVICE_HOST;
 app.use(bodyParser.json());
 
 app.use("/info", InfoController);
-app.use("/movies", proxy(movieService + "/movies"));
-app.use("/celebs", proxy(movieService + "/celebs"));
-app.use("/oscars", proxy(movieService + "/oscars"));
-app.use("/cinemas", proxy(showService + "/cinemas"));
-app.use("/theaters", proxy(showService + "/theaters"));
-app.use("/shows", proxy(showService + "/shows"));
-app.use("/orders", proxy(orderService + "/orders"));
-app.use("/customers", proxy(orderService + "/customers"));
+app.use("/ms", proxy(movieService));
+app.use("/cs", proxy(showService));
+app.use("/os", proxy(orderService));
 
 app.listen(port, () => {
    console.log(`Movie service is running on port ${port}`);
